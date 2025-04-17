@@ -317,49 +317,44 @@ st.markdown(
 
 
 
-option_text_input = st.text_area('', height=310)
+#option_text_input = st.text_area('', height=310)
 
-option_prompt = "You are an AI Option trader. Below is the text format of Option Chain of an asset. Analyze and share top 3 strategies using option chain data uploaded and share how can we build that strategies with the data shared.  Here is the option chain text : "
+#option_prompt = "You are an AI Option trader. Below is the text format of Option Chain of an asset. Analyze and share top 3 strategies using option chain data uploaded and share how can we build that strategies with the data shared.  Here is the option chain text : "
 
-option_final_prompt = option_prompt + option_text_input
-
-
-#with st.container():
- #   a, b, c = st.columns([0.49, 1, 1])  # Adjust the width ratios as needed
-  #  with b:  # This places it in the center column
-   #     st.button("Submit",key="submit_button_1")
+#option_final_prompt = option_prompt + option_text_input
 
 
 
 
-# Add the icons in the bottom right corner
-st.markdown(
-    """
-    <div class="icon-container">
-        <img src="https://thevyatergroup.com/wp-content/uploads/2021/03/logo-amazon-404px-grey.png" alt="Icon 1">
-        <img src="https://www.krenerbookkeeping.com/wp-content/uploads/2018/07/logo-microsoft-404px-grey.png" alt="Icon 2">
-        <img src="https://mohamadfaizal.com/wp-content/uploads/2017/05/logo-google-404px-grey.png" alt="Icon 3">
+
+# # Add the icons in the bottom right corner
+# st.markdown(
+#     """
+#     <div class="icon-container">
+#         <img src="https://thevyatergroup.com/wp-content/uploads/2021/03/logo-amazon-404px-grey.png" alt="Icon 1">
+#         <img src="https://www.krenerbookkeeping.com/wp-content/uploads/2018/07/logo-microsoft-404px-grey.png" alt="Icon 2">
+#         <img src="https://mohamadfaizal.com/wp-content/uploads/2017/05/logo-google-404px-grey.png" alt="Icon 3">
 
         
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 
 
 
 
 
-if len(option_final_prompt) > 500:
-    chat_completion = client.chat.completions.create( messages=[{"role": "user","content": option_final_prompt,}],model="gpt-3.5-turbo",)
-    op = chat_completion.choices[0].message.content
-    op = op.replace('\n', '<br>')
-    st.markdown(f'<p style="color:white;">{op}</p>', unsafe_allow_html=True)
-    #st.markdown(f'<p style="color:white;">{op}</p>', unsafe_allow_html=True)
-    #st.write(op)
-else:
-    st.write('')
+# if len(option_final_prompt) > 500:
+#     chat_completion = client.chat.completions.create( messages=[{"role": "user","content": option_final_prompt,}],model="gpt-3.5-turbo",)
+#     op = chat_completion.choices[0].message.content
+#     op = op.replace('\n', '<br>')
+#     st.markdown(f'<p style="color:white;">{op}</p>', unsafe_allow_html=True)
+#     #st.markdown(f'<p style="color:white;">{op}</p>', unsafe_allow_html=True)
+#     #st.write(op)
+# else:
+#     st.write('')
  
 #----------------------------------------------------FinChat---------------------------------------------
 
