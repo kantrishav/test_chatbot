@@ -371,7 +371,7 @@ import pandas as pd
 
     
 from phi.model.openai.chat import OpenAIChat
-from secret_key import openapi_key  # Assuming 'secret_key.py' contains your OpenAI API key
+#from secret_key import openapi_key  # Assuming 'secret_key.py' contains your OpenAI API key
 import os
 #os.environ['OPENAI_API_KEY'] = openapi_key
 
