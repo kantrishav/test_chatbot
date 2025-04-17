@@ -363,7 +363,8 @@ else:
  
 #----------------------------------------------------FinChat---------------------------------------------
 
-from phi.agent import Agent, Tool
+from phi.agent import Agent
+#, Tool
 from phi.tools import Toolkit
 import requests
 import pandas as pd
