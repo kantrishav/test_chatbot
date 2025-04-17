@@ -5,6 +5,12 @@ pandas
 requests
 openai
 
+
+numpy
+plotly
+SciPy
+
+
 # LangChain and agents
 langchain
 langchain-community
