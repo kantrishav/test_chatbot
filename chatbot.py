@@ -284,7 +284,7 @@ st.markdown(
 st.markdown(
     """
     <div style='text-align: center;'>
-        <h1 style='color: #0ff550; font-size: 20px;'>Ask Anything ! Ex- What are the top iron condors combinations for TSLA next week expiry? </h1>
+        <h1 style='color: #ffffff; font-size: 20px;'>Ask Anything ! Ex- What are the top iron condors combinations for TSLA next week expiry? </h1>
     </div>
     """,
     unsafe_allow_html=True
