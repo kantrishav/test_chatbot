@@ -450,7 +450,7 @@ from langchain.agents import AgentExecutor, create_react_agent, load_tools
 
 
 #query = st.text_input("Ask about options data for a stock:") 
-query = st.text_area('', height=310)
+query = st.text_area('', height=250)
 query = (query + " Show the output in strctured format using tables")
 
 
