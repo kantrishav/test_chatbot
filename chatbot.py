@@ -263,7 +263,7 @@ st.markdown(
 st.markdown(
     """
     <div style='text-align: center;'>
-        <h1 style='color: #8c8c8c; font-size: 20px;'>Choose the best option strategy for you. Just paste your option chain data.</h1>
+        <h1 style='color: #8c8c8c; font-size: 20px;'>Choose the best option strategy for you.Ask your personal Options Trade Advisor.</h1>
     </div>
     """,
     unsafe_allow_html=True
@@ -273,7 +273,7 @@ st.markdown(
 st.markdown(
     """
     <div style='text-align: center;'>
-        <h1 style='color: #0ff550; font-size: 20px;'>Drop Your Option Chain in the Box and hit Submit !</h1>
+        <h1 style='color: #0ff550; font-size: 20px;'>Ask : What are the best Iron Condors for QQQ for next week expiry ? !</h1>
     </div>
     """,
     unsafe_allow_html=True
