@@ -470,6 +470,6 @@ if query:
 
 #agent.print_response("Fetch the options data for MICROSOFT and give the top 3 iron condor strategy", stream=False)
 
-
+st.write("Rishav Kant Gen AI Development")
 
 
