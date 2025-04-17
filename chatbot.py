@@ -465,7 +465,7 @@ query = st.text_area('', height=250)
 query = (query + " Show the output in strctured format using tables")
 
 
-if query:
+if len(query)>3:
     st.chat_message("user").write(query)
     with st.chat_message("assistant"):
         response = agent.run(query)
